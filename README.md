@@ -8,7 +8,7 @@ Bilingual (English / ಕನ್ನಡ) Next.js + Tailwind site, statically genera
 ## Sections
 - **What changed**: BBMP Act 2020 vs GBG Act 2024, through participation, autonomy and accountability
 - **Find your ward**: search or tap any of the 369 wards to see corporation, zone and assembly constituency
-- **Who does what**: corporations vs GBA vs parastatals (BWSSB, BESCOM, BDA ...), links to Vicharane for complaints
+- **Who does what**: corporations vs GBA vs parastatals (BWSSB, BESCOM, BDA ...)
 - **Your voice**: councillors, ward committees, RTI, plus expert concerns
 - **Citizen survey**: placeholder until survey results are analysed
 - **About**: project and workstreams
@@ -30,5 +30,5 @@ npm run dev   # http://localhost:3000 -> redirects to /en
 - [ ] Confirm current corporation election status
 
 ## Data
-- Ward list and boundaries (369 GBA wards, 5 corporations): reused from Vicharane (`speak-up-karnataka`)
+- Ward list and boundaries (369 GBA wards, 5 corporations)
 - Policy comparison: PRS Legislative Research brief on the GBG Bill, 2024

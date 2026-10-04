@@ -3,8 +3,6 @@ import { notFound } from "next/navigation";
 import WardFinder from "@/components/WardFinder";
 import { getDictionary, hasLocale, SOURCES, SURVEY_URL } from "@/lib/i18n";
 
-const VICHARANE_URL = "https://speak-up-karnataka.lovable.app";
-
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
@@ -147,17 +145,6 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
                 <p className="mt-2 text-sm text-muted">{a.text}</p>
               </div>
             ))}
-          </div>
-          <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-ink p-6 text-paper">
-            <p className="max-w-xl">{t.who.vicharane}</p>
-            <a
-              href={VICHARANE_URL}
-              target="_blank"
-              rel="noopener"
-              className="rounded-full bg-paper px-5 py-2.5 font-semibold text-ink hover:opacity-90"
-            >
-              {t.who.vicharaneCta}
-            </a>
           </div>
         </section>
 

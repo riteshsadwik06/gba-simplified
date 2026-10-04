@@ -96,8 +96,6 @@ const en = {
       { name: "BDA", text: "Layouts, sites and development schemes." },
       { name: "Bengaluru City Police", text: "Law and order, and traffic." },
     ],
-    vicharane: "Got a specific complaint? Vicharane drafts it for the right authority and tracks it.",
-    vicharaneCta: "Open Vicharane",
   },
   voice: {
     title: "Where you still have a say",
@@ -133,7 +131,7 @@ const en = {
   },
   footer: {
     sources: "Sources",
-    data: "Ward data: GBA ward boundary dataset (369 wards), as used in Vicharane.",
+    data: "Ward data: GBA ward boundary dataset (369 wards).",
     built: "Built by Global Shapers Bengaluru II.",
   },
 };
@@ -227,8 +225,6 @@ const kn: Dict = {
       { name: "BDA", text: "ಬಡಾವಣೆಗಳು, ನಿವೇಶನಗಳು, ಅಭಿವೃದ್ಧಿ ಯೋಜನೆಗಳು." },
       { name: "ಬೆಂಗಳೂರು ನಗರ ಪೊಲೀಸ್", text: "ಕಾನೂನು ಸುವ್ಯವಸ್ಥೆ ಮತ್ತು ಸಂಚಾರ." },
     ],
-    vicharane: "ನಿರ್ದಿಷ್ಟ ದೂರು ಇದೆಯೇ? ವಿಚಾರಣೆ ಅದನ್ನು ಸರಿಯಾದ ಪ್ರಾಧಿಕಾರಕ್ಕೆ ಬರೆದು ಟ್ರ್ಯಾಕ್ ಮಾಡುತ್ತದೆ.",
-    vicharaneCta: "ವಿಚಾರಣೆ ತೆರೆಯಿರಿ",
   },
   voice: {
     title: "ನಿಮಗೆ ಇನ್ನೂ ಎಲ್ಲಿ ಧ್ವನಿ ಇದೆ",
@@ -264,7 +260,7 @@ const kn: Dict = {
   },
   footer: {
     sources: "ಮೂಲಗಳು",
-    data: "ವಾರ್ಡ್ ದತ್ತಾಂಶ: ಜಿಬಿಎ ವಾರ್ಡ್ ಗಡಿ ದತ್ತಾಂಶ (369 ವಾರ್ಡ್‌ಗಳು), ವಿಚಾರಣೆಯಲ್ಲಿ ಬಳಸಿದಂತೆ.",
+    data: "ವಾರ್ಡ್ ದತ್ತಾಂಶ: ಜಿಬಿಎ ವಾರ್ಡ್ ಗಡಿ ದತ್ತಾಂಶ (369 ವಾರ್ಡ್‌ಗಳು).",
     built: "ಗ್ಲೋಬಲ್ ಶೇಪರ್ಸ್ ಬೆಂಗಳೂರು II ನಿರ್ಮಿಸಿದೆ.",
   },
 };
