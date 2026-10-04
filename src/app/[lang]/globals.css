@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f6f2ea;
+  --card: #fffdf8;
+  --ink: #1b2a3a;
+  --muted: #5d6673;
+  --line: #e3dccd;
+  --accent: #c8553d;
+  --c-central: #c8553d;
+  --c-north: #2e6f95;
+  --c-south: #d9a02b;
+  --c-east: #4f8a5b;
+  --c-west: #7a5ea8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #121820;
+    --card: #19212b;
+    --ink: #ece6da;
+    --muted: #9aa3ae;
+    --line: #2a3542;
+    --accent: #e0745c;
+    --c-central: #e0745c;
+    --c-north: #5b9cc4;
+    --c-south: #e4b54a;
+    --c-east: #6fb07c;
+    --c-west: #9d84cc;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --font-sans: "Inter Variable", "Noto Sans Kannada Variable", system-ui, sans-serif;
+  --font-display: "Fraunces Variable", "Noto Sans Kannada Variable", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
