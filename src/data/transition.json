@@ -1,0 +1,355 @@
+[
+  {
+    "id": "gba-constituted",
+    "area": "structure",
+    "status": "moved",
+    "item": "Greater Bengaluru Authority",
+    "item_kn": "ಗ್ರೇಟರ್ ಬೆಂಗಳೂರು ಪ್ರಾಧಿಕಾರ",
+    "summary": "In place. A 75-member authority chaired by the Chief Minister, D.K. Shivakumar since June 2026.",
+    "summary_kn": "ಜಾರಿಯಲ್ಲಿದೆ. ಮುಖ್ಯಮಂತ್ರಿ ಅಧ್ಯಕ್ಷತೆಯ 75 ಸದಸ್ಯರ ಪ್ರಾಧಿಕಾರ; ಜೂನ್ 2026ರಿಂದ ಡಿ.ಕೆ. ಶಿವಕುಮಾರ್ ಮುಖ್ಯಮಂತ್ರಿ.",
+    "detail": "The Act came into force on 15 May 2025 and the GBA began functioning fully on 2 September 2025, when BBMP ceased to exist. Members include MPs, MLAs, ministers, future mayors and heads of parastatals; the Bengaluru Development Minister is vice-chair and M. Maheshwar Rao is Chief Commissioner. Of roughly 70 to 75 members, only the five mayors will represent the corporations.",
+    "as_of": "2026-06",
+    "sources": [
+      { "title": "Wikipedia: Greater Bengaluru Authority", "url": "https://en.wikipedia.org/wiki/Greater_Bengaluru_Authority" },
+      { "title": "Deccan Herald: Govt constitutes 75-member GBA", "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fgovt-constitutes-75-member-greater-bengaluru-authority-3698662" },
+      { "title": "News On AIR: D.K. Shivakumar sworn in as CM (3 Jun 2026)", "url": "https://newsonair.gov.in/d-k-shivakumar-sworn-in-as-karnataka-chief-minister/" },
+      { "title": "Question of Cities: a step forward or two steps back?", "url": "https://questionofcities.org/bengaluru-a-step-forward-or-two-steps-backslide-in-urban-governance/" }
+    ]
+  },
+  {
+    "id": "five-corporations",
+    "area": "structure",
+    "status": "moved",
+    "item": "Five city corporations",
+    "item_kn": "ಐದು ನಗರ ಪಾಲಿಕೆಗಳು",
+    "summary": "Formed on 2 September 2025. Each is run by an IAS commissioner; none has an elected council yet.",
+    "summary_kn": "2 ಸೆಪ್ಟೆಂಬರ್ 2025ರಂದು ರಚನೆ. ಪ್ರತಿಯೊಂದನ್ನು ಐಎಎಸ್ ಆಯುಕ್ತರು ನಡೆಸುತ್ತಾರೆ; ಯಾವುದಕ್ಕೂ ಇನ್ನೂ ಚುನಾಯಿತ ಕೌನ್ಸಿಲ್ ಇಲ್ಲ.",
+    "detail": "Central (78 sq km), North (158), South (147), East (168) and West (161), about 712 sq km in all. Commissioners: Rajendra Cholan (Central), Sunil Kumar P. (North), Ramesh K.N. (South), D.S. Ramesh (East), Rajendra K.V. (West). The Act allows up to seven corporations.",
+    "as_of": "2026-06",
+    "sources": [
+      { "title": "Wikipedia: Greater Bengaluru Authority", "url": "https://en.wikipedia.org/wiki/Greater_Bengaluru_Authority" },
+      { "title": "Deccan Herald: All you need to know about the five corporations", "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-civic-revamp-all-you-need-to-know-about-five-corporations-under-gba-3709653" }
+    ]
+  },
+  {
+    "id": "staff",
+    "area": "structure",
+    "status": "underway",
+    "item": "Staff split from BBMP",
+    "item_kn": "ಬಿಬಿಎಂಪಿ ಸಿಬ್ಬಂದಿ ಹಂಚಿಕೆ",
+    "summary": "BBMP's staff were redistributed, but the new system is about 4,900 people short of its sanctioned strength.",
+    "summary_kn": "ಬಿಬಿಎಂಪಿ ಸಿಬ್ಬಂದಿಯನ್ನು ಹಂಚಲಾಗಿದೆ, ಆದರೆ ಹೊಸ ವ್ಯವಸ್ಥೆಗೆ ಮಂಜೂರಾದ ಸಂಖ್ಯೆಗಿಂತ ಸುಮಾರು 4,900 ಜನ ಕಡಿಮೆ.",
+    "detail": "BBMP had 18,790 employees against 22,411 sanctioned posts. The new set-up needs 23,689: 314 at the GBA, 107 at B-SMILE (the infrastructure company), and 2,163 to 4,315 in each corporation. Sanitation workers (16,807) are the largest group. New hiring is planned in finance, town planning, IT, legal, public health, survey and revenue; the extra wage bill is about Rs 137 crore a year.",
+    "as_of": "2025-09",
+    "sources": [
+      { "title": "Deccan Herald: Wage bill Rs 137 cr a year; GBA needs 1,200 more staff", "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fwage-bill-rs-137-cr-a-year-gba-system-needs-1-200-more-staff-3705903" }
+    ]
+  },
+  {
+    "id": "wards",
+    "area": "elections",
+    "status": "moved",
+    "item": "Ward boundaries and reservations",
+    "item_kn": "ವಾರ್ಡ್ ಗಡಿ ಮತ್ತು ಮೀಸಲಾತಿ",
+    "summary": "369 wards notified, up from 198. Reservations notified in January 2026, with half the wards reserved for women.",
+    "summary_kn": "198ರ ಬದಲು 369 ವಾರ್ಡ್‌ಗಳು ಅಧಿಸೂಚಿತ. ಜನವರಿ 2026ರಲ್ಲಿ ಮೀಸಲಾತಿ ಪ್ರಕಟ; ಅರ್ಧ ವಾರ್ಡ್‌ಗಳು ಮಹಿಳೆಯರಿಗೆ.",
+    "detail": "Ward counts: Central 63, North 72, South 72, East 50, West 112 (some official sources give 111 for West and 368 overall after a late merger). Wards are reserved across General, SC, ST and OBC categories. Voter numbers per ward vary widely: some central wards have under 10,000 voters while Yelahanka and Byatarayanapura average over 20,000.",
+    "as_of": "2026-08",
+    "sources": [
+      { "title": "The South First: Karnataka approves 369 wards under GBA", "url": "https://thesouthfirst.com/karnataka/karnataka-approves-369-wards-under-gba-raising-hopes-for-long-delayed-civic-polls/" },
+      { "title": "Deccan Herald: Reservations notified for 369 GBA wards (Jan 2026)", "url": "https://www.deccanherald.com/india/karnataka/karnataka-govt-notifies-reservations-for-369-gba-wards-ahead-of-supreme-court-hearing-3857440" },
+      { "title": "OpenCity: GBA wards delimitation 2025 dataset", "url": "https://data.opencity.in/dataset/gba-wards-delimitation-2025" },
+      { "title": "India News Network: Roll revision alters civic poll dynamics", "url": "https://www.indianewsnetwork.com/en/bengaluru-electoral-roll-revision-alters-civic-poll-dynamics-20260826" }
+    ]
+  },
+  {
+    "id": "elections",
+    "area": "elections",
+    "status": "not_yet",
+    "item": "Corporation elections",
+    "item_kn": "ಪಾಲಿಕೆ ಚುನಾವಣೆ",
+    "summary": "Not held. The Supreme Court deadline has moved three times and now stands at 31 December 2026.",
+    "summary_kn": "ನಡೆದಿಲ್ಲ. ಸುಪ್ರೀಂ ಕೋರ್ಟ್ ಗಡುವು ಮೂರು ಬಾರಿ ಮುಂದೂಡಲ್ಪಟ್ಟು ಈಗ 31 ಡಿಸೆಂಬರ್ 2026.",
+    "detail": "The deadline was 30 June 2026, then 31 August, then 31 December, to allow the electoral roll revision to finish. The state has said polls will be held within a month of the final roll (due 27 October 2026). The last civic election was in 2015; the council's term ended in September 2020.",
+    "as_of": "2026-08",
+    "sources": [
+      { "title": "Wikipedia: 2026 Greater Bengaluru Authority elections", "url": "https://en.wikipedia.org/wiki/2026_Greater_Bengaluru_Authority_elections" },
+      { "title": "India News Network: Roll revision alters civic poll dynamics", "url": "https://www.indianewsnetwork.com/en/bengaluru-electoral-roll-revision-alters-civic-poll-dynamics-20260826" }
+    ]
+  },
+  {
+    "id": "voter-roll",
+    "area": "elections",
+    "status": "underway",
+    "item": "Voter roll revision (SIR)",
+    "item_kn": "ಮತದಾರರ ಪಟ್ಟಿ ಪರಿಷ್ಕರಣೆ (SIR)",
+    "summary": "The draft roll lists about 57 lakh voters, down from about 1.03 crore. 46.88 lakh names are flagged for deletion.",
+    "summary_kn": "ಕರಡು ಪಟ್ಟಿಯಲ್ಲಿ ಸುಮಾರು 57 ಲಕ್ಷ ಮತದಾರರು, ಹಿಂದೆ ಸುಮಾರು 1.03 ಕೋಟಿ. 46.88 ಲಕ್ಷ ಹೆಸರುಗಳು ತೆಗೆದುಹಾಕಲು ಗುರುತಿಸಲಾಗಿದೆ.",
+    "detail": "Draft roll published 24 August 2026; claims and objections closed 23 September; final roll due 27 October. Most deletions are marked 'shifted from place of residence', which hits renters and migrants hardest. The roll is still organised by the old 'BBMP (North/South/Central)' election districts, with deletion rates of 45 to 49 percent. Anyone left out can apply with Form 6 on the Election Commission portal or ECINET app; helpline 1950.",
+    "as_of": "2026-09",
+    "sources": [
+      { "title": "Deccan Herald: 46.88 lakh names flagged for deletion", "url": "https://www.deccanherald.com/india/karnataka/bengaluru/is-your-name-on-the-bengaluru-voter-list-4688-lakh-names-flagged-for-deletion-4122667" },
+      { "title": "ThePrint: Why urban centres see high deletions during SIR", "url": "https://theprint.in/india/governance/bengaluru-to-lucknow-why-urban-centres-are-seeing-high-electoral-roll-deletions-during-sir/3026124/" },
+      { "title": "The News Minute: SIR draft rolls are out, what voters need to do", "url": "https://www.thenewsminute.com/karnataka/karnataka-sir-draft-rolls-are-out-what-voters-need-to-do-next" },
+      { "title": "News Karnataka: Special campaign for voter roll claims (Sep 2026)", "url": "https://newskarnataka.com/bengaluru/bengaluru-to-hold-two-day-special-campaign-for-voter-roll-claims/19092026/" }
+    ]
+  },
+  {
+    "id": "mayors",
+    "area": "elections",
+    "status": "not_yet",
+    "item": "Mayors and councils",
+    "item_kn": "ಮೇಯರ್ ಮತ್ತು ಕೌನ್ಸಿಲ್",
+    "summary": "No mayor, deputy mayor or councillor in any corporation. Commissioners take all decisions.",
+    "summary_kn": "ಯಾವ ಪಾಲಿಕೆಯಲ್ಲೂ ಮೇಯರ್, ಉಪಮೇಯರ್ ಅಥವಾ ಸದಸ್ಯರಿಲ್ಲ. ಎಲ್ಲ ನಿರ್ಧಾರ ಆಯುಕ್ತರದು.",
+    "detail": "Once elected, mayors will serve 30 months (BBMP mayors served one year). Even then, appointed commissioners hold most executive power under the Act.",
+    "as_of": "2026-09",
+    "sources": [
+      { "title": "Wikipedia: Bengaluru Central City Corporation", "url": "https://en.wikipedia.org/wiki/Bengaluru_Central_City_Corporation" },
+      { "title": "PRS: The Greater Bengaluru Governance Bill, 2024", "url": "https://prsindia.org/bills/state-legislative-briefs/the-greater-bengaluru-governance-bill-2024" }
+    ]
+  },
+  {
+    "id": "budgets",
+    "area": "money",
+    "status": "moved",
+    "item": "Separate budgets",
+    "item_kn": "ಪ್ರತ್ಯೇಕ ಬಜೆಟ್",
+    "summary": "Each corporation presented its first budget for 2026-27, about Rs 20,216 crore combined, approved by the GBA rather than an elected council.",
+    "summary_kn": "ಪ್ರತಿ ಪಾಲಿಕೆ 2026-27ಕ್ಕೆ ಮೊದಲ ಬಜೆಟ್ ಮಂಡಿಸಿತು, ಒಟ್ಟು ಸುಮಾರು ರೂ. 20,216 ಕೋಟಿ; ಚುನಾಯಿತ ಕೌನ್ಸಿಲ್ ಬದಲು ಜಿಬಿಎ ಅನುಮೋದನೆ.",
+    "detail": "Presented in March 2026 by the commissioners. West (Rs 4,732 cr) and North (Rs 4,341 cr) are the largest; the other three are under Rs 4,000 cr each. About 60 percent goes to public works and 11.4 percent to solid waste; education and the council get under 1 percent each. Combined budgets have roughly doubled from about Rs 10,000 cr a few years ago, but income has not kept pace; corporations historically collect 80 to 90 percent of projected revenue.",
+    "as_of": "2026-03",
+    "sources": [
+      { "title": "OpenCity: Analysis of GBA budgets 2026-27", "url": "https://opencity.in/analysis-gba-budgets-2026-27/" },
+      { "title": "The News Minute: East and Central corporation budgets", "url": "https://www.thenewsminute.com/karnataka/gba-budget-2026-how-bengalurus-east-and-central-corporations-plan-to-reshape-the-city" },
+      { "title": "Deccan Herald: First GBA meeting (budgets to be approved by GBA)", "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fat-1st-gba-meet-cm-siddaramaiah-approves-master-plan-preparation-for-bengaluru-3760245" }
+    ]
+  },
+  {
+    "id": "revenue-gap",
+    "area": "money",
+    "status": "stuck",
+    "item": "Revenue across corporations",
+    "item_kn": "ಪಾಲಿಕೆಗಳ ಆದಾಯ",
+    "summary": "Uneven. West expected Rs 943 crore from two new schemes and has earned nothing; it has paused capital works until December.",
+    "summary_kn": "ಅಸಮಾನ. ಎರಡು ಹೊಸ ಯೋಜನೆಗಳಿಂದ ರೂ. 943 ಕೋಟಿ ನಿರೀಕ್ಷಿಸಿದ್ದ ಪಶ್ಚಿಮ ಪಾಲಿಕೆಗೆ ಏನೂ ಬಂದಿಲ್ಲ; ಡಿಸೆಂಬರ್‌ವರೆಗೆ ಬಂಡವಾಳ ಕಾಮಗಾರಿ ಸ್ಥಗಿತ.",
+    "detail": "West projected Rs 380 cr from premium FAR and Rs 563 cr from B-khata to A-khata conversion; it earned Rs 0 from both. North earned Rs 250 cr from FAR and Rs 80.76 cr from conversions. Property tax so far: East about Rs 870 cr, West Rs 631 cr, North Rs 553 cr. West carries about Rs 1,000 cr in bills pending since February 2024 and is struggling to pay salaries, while running the most parks (496), referral hospitals and schools.",
+    "as_of": "2026-07",
+    "sources": [
+      { "title": "Deccan Herald: Cash-strapped Bengaluru West Corporation pushed to the brink", "url": "https://www.deccanherald.com/amp/story/india/karnataka/bengaluru/nil-revenue-from-khata-switch-far-pushes-cash-strapped-bengaluru-west-corporation-to-the-brink-4099611" }
+    ]
+  },
+  {
+    "id": "spending",
+    "area": "money",
+    "status": "stuck",
+    "item": "Spending what was budgeted",
+    "item_kn": "ಬಜೆಟ್ ಹಣ ಖರ್ಚು",
+    "summary": "Slow. In the first seven months, Central and West spent under half their allocations.",
+    "summary_kn": "ನಿಧಾನ. ಮೊದಲ ಏಳು ತಿಂಗಳಲ್ಲಿ ಕೇಂದ್ರ ಮತ್ತು ಪಶ್ಚಿಮ ಪಾಲಿಕೆಗಳು ಹಂಚಿಕೆಯ ಅರ್ಧಕ್ಕಿಂತ ಕಡಿಮೆ ಖರ್ಚು ಮಾಡಿವೆ.",
+    "detail": "In 2025-26 (after the split), North used the most of its budget; East and South used about 65 percent; Central and West under 50 percent. When income falls short, education, welfare and health are cut first. The 2025-26 BBMP budget was re-divided in September 2025, with West getting the largest share and North, South and Central Rs 313 to 367 crore each.",
+    "as_of": "2026-03",
+    "sources": [
+      { "title": "OpenCity: Analysis of GBA budgets 2026-27", "url": "https://opencity.in/analysis-gba-budgets-2026-27/" },
+      { "title": "Deccan Herald: GBA re-allocates budget, West gets biggest share", "url": "https://www.deccanherald.com/india/karnataka/bengaluru/greater-bengaluru-authority-re-allocates-budget-west-gets-biggest-share-3731335" }
+    ]
+  },
+  {
+    "id": "legacy-bills",
+    "area": "money",
+    "status": "legacy",
+    "item": "BBMP's unpaid bills",
+    "item_kn": "ಬಿಬಿಎಂಪಿಯ ಬಾಕಿ ಬಿಲ್‌ಗಳು",
+    "summary": "Inherited. Contractors' bills from the BBMP era are being paid by the new corporations, well past the usual two-year cycle.",
+    "summary_kn": "ಬಳುವಳಿ. ಬಿಬಿಎಂಪಿ ಕಾಲದ ಗುತ್ತಿಗೆದಾರರ ಬಿಲ್‌ಗಳನ್ನು ಹೊಸ ಪಾಲಿಕೆಗಳು ಪಾವತಿಸುತ್ತಿವೆ.",
+    "detail": "West alone has about Rs 1,000 crore pending from February 2024 onwards. In September 2026 the state contractors' association set a November deadline over Rs 38,000 crore pending across eight state departments, and threatened to stop work.",
+    "as_of": "2026-09",
+    "sources": [
+      { "title": "Deccan Herald: Cash-strapped Bengaluru West Corporation", "url": "https://www.deccanherald.com/amp/story/india/karnataka/bengaluru/nil-revenue-from-khata-switch-far-pushes-cash-strapped-bengaluru-west-corporation-to-the-brink-4099611" },
+      { "title": "UNI: Contractors set bills clearance deadline (30 Sep 2026)", "url": "https://www.uniindia.com/south-india/karnataka-contractors-bills-clearance-deadline/198138" }
+    ]
+  },
+  {
+    "id": "planning-authority",
+    "area": "planning",
+    "status": "moved",
+    "item": "City planning powers",
+    "item_kn": "ನಗರ ಯೋಜನಾ ಅಧಿಕಾರ",
+    "summary": "Moved from BDA to the GBA: the master plan, land-use changes, layouts and TDR for about 719 sq km.",
+    "summary_kn": "ಬಿಡಿಎಯಿಂದ ಜಿಬಿಎಗೆ: ಮಹಾಯೋಜನೆ, ಭೂ ಬಳಕೆ ಬದಲಾವಣೆ, ಬಡಾವಣೆ ಮತ್ತು ಟಿಡಿಆರ್, ಸುಮಾರು 719 ಚ.ಕಿ.ಮೀ.",
+    "detail": "Decided at the first GBA meeting on 11 October 2025. BDA keeps planning powers for roughly 400 to 500 sq km on the periphery. Corporations approve individual building plans within the zoning rules. The GBA also approved preparing a new master plan; Bengaluru has had no valid master plan for about a decade.",
+    "as_of": "2025-10",
+    "sources": [
+      { "title": "Deccan Herald: At first GBA meet, master plan preparation approved", "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fat-1st-gba-meet-cm-siddaramaiah-approves-master-plan-preparation-for-bengaluru-3760245" },
+      { "title": "Deccan Herald: New order, GBA to take over from BDA", "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fnew-order-gba-to-take-over-from-bda-3718167" },
+      { "title": "Deccan Herald: Two agencies to draft Bengaluru's new master plan", "url": "https://www.deccanherald.com/amp/story/india/karnataka/bengaluru/two-agencies-to-draft-bengaluru-s-new-master-plan-after-a-decade-3819100" }
+    ]
+  },
+  {
+    "id": "building-approvals",
+    "area": "planning",
+    "status": "stuck",
+    "item": "Building plan approvals",
+    "item_kn": "ಕಟ್ಟಡ ನಕ್ಷೆ ಅನುಮೋದನೆ",
+    "summary": "Split across five corporations with different processes. Approvals and occupancy certificates stalled for about two months in mid-2026.",
+    "summary_kn": "ಐದು ಪಾಲಿಕೆಗಳಲ್ಲಿ ಬೇರೆ ಬೇರೆ ಪ್ರಕ್ರಿಯೆ. 2026ರ ಮಧ್ಯದಲ್ಲಿ ಸುಮಾರು ಎರಡು ತಿಂಗಳು ಅನುಮೋದನೆ ಸ್ಥಗಿತ.",
+    "detail": "Small residential plots (up to 50x80 ft) can get automatic approval under the 'Nambike Nakshe' scheme; Central promises same-day and East 15-day processing. But by August 2026, building plan approvals, occupancy certificates and land-use change meetings had stalled for about two months; developers blamed the government change and fragmented processes, officials cited roll-revision duty.",
+    "as_of": "2026-08",
+    "sources": [
+      { "title": "Deccan Herald: Approval logjam leaves real estate in limbo (Aug 2026)", "url": "https://www.deccanherald.com/amp/story/india/karnataka/bengaluru/approval-logjam-leaves-bengaluru-real-estate-sector-in-limbo-4096886" },
+      { "title": "The News Minute: East and Central corporation budgets", "url": "https://www.thenewsminute.com/karnataka/gba-budget-2026-how-bengalurus-east-and-central-corporations-plan-to-reshape-the-city" }
+    ]
+  },
+  {
+    "id": "garbage",
+    "area": "services",
+    "status": "underway",
+    "item": "Garbage collection",
+    "item_kn": "ಕಸ ಸಂಗ್ರಹ",
+    "summary": "Being handed back from the state's waste company (BSWML) to the corporations. Service is patchy.",
+    "summary_kn": "ರಾಜ್ಯದ ತ್ಯಾಜ್ಯ ಕಂಪನಿ (BSWML)ಯಿಂದ ಪಾಲಿಕೆಗಳಿಗೆ ಮರಳಿ ಹಸ್ತಾಂತರ. ಸೇವೆ ಅಸ್ಥಿರ.",
+    "detail": "In August 2025, after Bengaluru ranked among the dirtiest cities in Swachh Survekshan, the state took door-to-door collection away from BSWML. In June 2026, 200 to 300 collection vehicles were missing daily and corporations were considering buying auto-tippers themselves. In September 2026 the High Court questioned the GBA's segregation claims (petitioners say 35 to 40 percent) and asked where 7,500 tonnes of daily waste goes.",
+    "as_of": "2026-09",
+    "sources": [
+      { "title": "Deccan Herald: Poor ranking, govt strips BSWML of garbage collection", "url": "https://www.deccanherald.com/india/karnataka/bengaluru/poor-ranking-govt-strips-bswml-of-garbage-collection-3683325" },
+      { "title": "Deccan Herald: Corporations regain control of waste collection", "url": "https://deccanherald.com/india/karnataka/bengaluru/bengaluru-waste-collection-back-to-where-it-began-as-corporations-regain-control-4095198" },
+      { "title": "Deccan Herald: Nearly 300 garbage vehicles missing daily (Jun 2026)", "url": "https://www.deccanherald.com/amp/story/india/karnataka/bengaluru/why-bengalurus-garbage-crisis-is-getting-worse-nearly-300-vehicles-missing-daily-4034593" },
+      { "title": "Supreme Today: High Court questions GBA's segregation claims (Sep 2026)", "url": "https://supremetoday.ai/karnataka-high-court-questions-gbas-bengaluru-waste-segregation-claims-seeks-comprehensive-report-20260912039" }
+    ]
+  },
+  {
+    "id": "property-tax",
+    "area": "services",
+    "status": "legacy",
+    "item": "Property tax payment",
+    "item_kn": "ಆಸ್ತಿ ತೆರಿಗೆ ಪಾವತಿ",
+    "summary": "Collected by your corporation, but paid on the old BBMP portal, bbmptax.karnataka.gov.in.",
+    "summary_kn": "ನಿಮ್ಮ ಪಾಲಿಕೆ ಸಂಗ್ರಹಿಸುತ್ತದೆ, ಆದರೆ ಪಾವತಿ ಹಳೆಯ ಬಿಬಿಎಂಪಿ ಪೋರ್ಟಲ್ bbmptax.karnataka.gov.in ನಲ್ಲಿ.",
+    "detail": "Rates are set by the state government in consultation with the GBA. Corporations expect Rs 4,378 crore in property tax in 2026-27, up from Rs 3,815 crore revised for 2024-25.",
+    "as_of": "2026-05",
+    "sources": [
+      { "title": "PropNewz: Property tax under GBA, 2026", "url": "https://www.propnewz.com/blog/bbmp-gba-property-tax-zones-rebates-2026" },
+      { "title": "OpenCity: Analysis of GBA budgets 2026-27", "url": "https://opencity.in/analysis-gba-budgets-2026-27/" }
+    ]
+  },
+  {
+    "id": "ekhata",
+    "area": "services",
+    "status": "underway",
+    "item": "e-khata (digital property record)",
+    "item_kn": "ಇ-ಖಾತಾ",
+    "summary": "About 8 lakh of an estimated 21 lakh properties have one. Conversions from B-khata to A-khata have been slow.",
+    "summary_kn": "ಅಂದಾಜು 21 ಲಕ್ಷ ಆಸ್ತಿಗಳಲ್ಲಿ ಸುಮಾರು 8 ಲಕ್ಷಕ್ಕೆ ಇ-ಖಾತಾ ಇದೆ. ಬಿ-ಖಾತಾದಿಂದ ಎ-ಖಾತಾಗೆ ಪರಿವರ್ತನೆ ನಿಧಾನ.",
+    "detail": "An e-khata is required to sell, register or borrow against property. In 2025, about 26,000 owners got tax notices after e-khata details were matched with tax records. The B-to-A conversion scheme drew 1,169 applications in its first week (Nov 2025), and 98 percent of early applications were pending for missing documents. The GBA is opening passport-style seva kendras and weekly 'Namma e-khata' open houses (from May 2026), and an online flow went live in April 2026.",
+    "as_of": "2026-05",
+    "sources": [
+      { "title": "The Realty Today: Over 8 lakh e-khatas issued", "url": "https://therealtytoday.com/news/regulatory/over-8-lakh-e-khatas-issued-gba-to-open-passport-style-centres-for-faster-processing/" },
+      { "title": "ETV Bharat: B-khata to A-khata scheme sees poor start", "url": "https://www.etvbharat.com/en/state/karnataka-b-khata-to-a-khata-scheme-sees-poor-start-enn25111204591" },
+      { "title": "Deccan Herald: Weekly Namma e-khata open houses", "url": "https://www.deccanherald.com/india/karnataka/bengaluru/gba-to-launch-weekly-namma-e-khata-open-houses-from-may-16-here-is-the-list-of-venues-in-bengaluru-4001509" },
+      { "title": "Deccan Herald: e-khata tax notices (Jul 2025)", "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fafter-e-khata-success-tax-tensionfor-bengaluru-property-owners-3643097" }
+    ]
+  },
+  {
+    "id": "complaints",
+    "area": "services",
+    "status": "legacy",
+    "item": "Civic complaints",
+    "item_kn": "ನಾಗರಿಕ ದೂರುಗಳು",
+    "summary": "Still on BBMP's Sahaaya 2.0 app and the 1533 helpline. A cross-agency 'Sahaaya Plus' is being built.",
+    "summary_kn": "ಇನ್ನೂ ಬಿಬಿಎಂಪಿಯ ಸಹಾಯ 2.0 ಆ್ಯಪ್ ಮತ್ತು 1533 ಸಹಾಯವಾಣಿ. ಎಲ್ಲ ಸಂಸ್ಥೆಗಳಿಗೆ ಒಂದೇ 'ಸಹಾಯ ಪ್ಲಸ್' ನಿರ್ಮಾಣ ಹಂತದಲ್ಲಿದೆ.",
+    "detail": "In July 2026 the GBA said Sahaaya Plus would track complaints across the corporations, BWSSB, BDA and BMRCL, including those raised on social media. No launch date has been given.",
+    "as_of": "2026-07",
+    "sources": [
+      { "title": "Deccan Herald: Single-window system to track civic complaints (Jul 2026)", "url": "https://www.deccanherald.com/india/karnataka/bengaluru/single-window-system-to-track-civic-complaints-across-agencies-4069729" }
+    ]
+  },
+  {
+    "id": "trade-licence",
+    "area": "services",
+    "status": "legacy",
+    "item": "Trade licences",
+    "item_kn": "ವ್ಯಾಪಾರ ಪರವಾನಗಿ",
+    "summary": "Issued centrally by the GBA, reportedly on BBMP's old IT system.",
+    "summary_kn": "ಜಿಬಿಎ ಕೇಂದ್ರೀಯವಾಗಿ ನೀಡುತ್ತದೆ, ಹಳೆಯ ಬಿಬಿಎಂಪಿ ತಂತ್ರಾಂಶದಲ್ಲೇ ಎಂದು ವರದಿ.",
+    "detail": "The 2026-27 renewal window ran 1 to 28 February 2026, with a 25 percent penalty in March and 100 percent from April. Licences can be taken for one to five years. Source is a practitioner guide, not an official notice; verify before relying on it.",
+    "as_of": "2026-02",
+    "sources": [
+      { "title": "CalcGuru: Trade licence in Bengaluru 2026", "url": "https://calcguru.in/?p=5213" }
+    ]
+  },
+  {
+    "id": "water",
+    "area": "services",
+    "status": "legacy",
+    "item": "Water and sewage",
+    "item_kn": "ನೀರು ಮತ್ತು ಒಳಚರಂಡಿ",
+    "summary": "Unchanged. Still BWSSB, a separate state board. The GBA only coordinates.",
+    "summary_kn": "ಬದಲಾವಣೆಯಿಲ್ಲ. ಇನ್ನೂ ಜಲಮಂಡಳಿ, ಪ್ರತ್ಯೇಕ ರಾಜ್ಯ ಮಂಡಳಿ. ಜಿಬಿಎ ಸಮನ್ವಯ ಮಾತ್ರ.",
+    "detail": "Parastatals were told at the first GBA meeting to appoint contact points at corporation and zone level. Many areas added to the city in 2007 still rely on tankers and borewells. BWSSB helpline: 1916.",
+    "as_of": "2025-10",
+    "sources": [
+      { "title": "Deccan Herald: First GBA meeting decisions", "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fat-1st-gba-meet-cm-siddaramaiah-approves-master-plan-preparation-for-bengaluru-3760245" },
+      { "title": "Vidhi: Regulating Bengaluru's water tankers", "url": "https://vidhilegalpolicy.in/blog/regulating-bengalurus-notorious-water-tankers/" }
+    ]
+  },
+  {
+    "id": "vending",
+    "area": "services",
+    "status": "stuck",
+    "item": "Street vending",
+    "item_kn": "ಬೀದಿ ಬದಿ ವ್ಯಾಪಾರ",
+    "summary": "Contested. A July 2026 footpath drive removed vendors; the state promised a fresh survey and provisional vending committees.",
+    "summary_kn": "ವಿವಾದದಲ್ಲಿ. ಜುಲೈ 2026ರ ಪಾದಚಾರಿ ಮಾರ್ಗ ತೆರವು; ಹೊಸ ಸಮೀಕ್ಷೆ ಮತ್ತು ತಾತ್ಕಾಲಿಕ ಸಮಿತಿಗಳ ಭರವಸೆ.",
+    "detail": "The Bengaluru Development Minister said vending on main roads would not be allowed, citing pedestrian safety. The government agreed to a new vendor census, to review the ration-card requirement, and to set up provisional Town Vending Committees ahead of elections to them. Many vendors are still waiting for ID cards.",
+    "as_of": "2026-07",
+    "sources": [
+      { "title": "The News Minute: Vendors welcome fresh survey, oppose eviction drive", "url": "https://www.thenewsminute.com/karnataka/bengaluru-vendors-welcome-fresh-survey-oppose-eviction-drive-and-main-road-ban" },
+      { "title": "Deccan Herald: Vendors warn GBA over pending ID cards", "url": "https://www.deccanherald.com/india/karnataka/bengaluru/karnataka-street-vendors-association-members-warn-greater-bengaluru-authority-of-protest-over-pending-id-cards-3834679" }
+    ]
+  },
+  {
+    "id": "ward-committees",
+    "area": "participation",
+    "status": "not_yet",
+    "item": "Ward committees",
+    "item_kn": "ವಾರ್ಡ್ ಸಮಿತಿಗಳು",
+    "summary": "Can't work as the Act intends until councillors are elected, since councillors chair them. Their role is advisory.",
+    "summary_kn": "ಸದಸ್ಯರು ಆಯ್ಕೆಯಾಗುವವರೆಗೆ ಕಾಯ್ದೆಯಂತೆ ಕೆಲಸ ಮಾಡಲಾಗದು, ಏಕೆಂದರೆ ಅವರೇ ಅಧ್ಯಕ್ಷರು. ಪಾತ್ರ ಸಲಹಾತ್ಮಕ ಮಾತ್ರ.",
+    "detail": "Since 2020, ward-level meetings have been run by nodal officers, with reports of MLAs stepping in and low attendance. Area sabhas, the neighbourhood tier in the 2020 BBMP Act, were dropped from the final GBG Act.",
+    "as_of": "2025-09",
+    "sources": [
+      { "title": "ORF: Recasting tools of decision-making in the megacity", "url": "https://www.orfonline.org/research/the-greater-bengaluru-governance-act-2024-recasting-tools-of-decision-making-in-the-megacity" },
+      { "title": "The News Minute: Ward committees without corporators", "url": "https://www.thenewsminute.com/amp/story/karnataka/absence-corporators-bengaluru-mlas-muscle-their-way-ward-committee-meets-163806" }
+    ]
+  },
+  {
+    "id": "act-quality",
+    "area": "participation",
+    "status": "stuck",
+    "item": "How experts rate the Act",
+    "item_kn": "ತಜ್ಞರ ಮೌಲ್ಯಮಾಪನ",
+    "summary": "Janaagraha scored it 3.4 out of 10, better than BBMP's Act on finance and staffing, weaker on planning, leadership and participation.",
+    "summary_kn": "ಜನಾಗ್ರಹ 10ಕ್ಕೆ 3.4 ಅಂಕ ನೀಡಿದೆ; ಹಣಕಾಸು, ಸಿಬ್ಬಂದಿಯಲ್ಲಿ ಉತ್ತಮ, ಯೋಜನೆ, ನಾಯಕತ್ವ, ಭಾಗವಹಿಸುವಿಕೆಯಲ್ಲಿ ದುರ್ಬಲ.",
+    "detail": "Janaagraha assessed 33 parameters (August 2025) and scored transparency, accountability and participation at 2.36/10. It recommends a full-term mayor-in-council, funded ward committees, mandatory area sabhas and open data. ORF's Ramanath Jha argues the Act centralises power with the state; PRS flags the CM chairing both the GBA and the planning committee.",
+    "as_of": "2025-09",
+    "sources": [
+      { "title": "Deccan Herald: Janaagraha study finds gaps in GBG Act", "url": "https://www.deccanherald.com/india/karnataka/bengaluru/janaagraha-study-finds-gaps-in-greater-bengaluru-governance-act-3688315" },
+      { "title": "ORF: Decentralisation dismantled?", "url": "https://www.orfonline.org/expert-speak/decentralisation-dismantled-assessing-the-greater-bengaluru-authority-act" },
+      { "title": "PRS: The Greater Bengaluru Governance Bill, 2024", "url": "https://prsindia.org/bills/state-legislative-briefs/the-greater-bengaluru-governance-bill-2024" }
+    ]
+  },
+  {
+    "id": "court-challenge",
+    "area": "legal",
+    "status": "not_yet",
+    "item": "Court challenge to the Act",
+    "item_kn": "ಕಾಯ್ದೆಗೆ ನ್ಯಾಯಾಲಯದ ಸವಾಲು",
+    "summary": "Pending in the Karnataka High Court. Petitioners argue the Act violates the 74th Amendment on local self-government.",
+    "summary_kn": "ಕರ್ನಾಟಕ ಹೈಕೋರ್ಟ್‌ನಲ್ಲಿ ಬಾಕಿ. ಕಾಯ್ದೆ 74ನೇ ತಿದ್ದುಪಡಿಗೆ ವಿರುದ್ಧ ಎಂಬುದು ಅರ್ಜಿದಾರರ ವಾದ.",
+    "detail": "WP 17336/2025 and connected matters (T.S. Nagabharana and others, argued by Prashant Bhushan) ask the court to strike down eleven sections, including those creating the GBA, and to order elections. Heard by the Chief Justice's bench in July 2026; no ruling reported.",
+    "as_of": "2026-07",
+    "sources": [
+      { "title": "LiveLaw: GBG Act renders local bodies toothless, petitioners tell HC (Jul 2026)", "url": "https://www.livelaw.in/high-court/karnataka-high-court/karnataka-high-court-advprashant-bhushan-challenge-greater-bengaluru-governance-act-541744" }
+    ]
+  }
+]

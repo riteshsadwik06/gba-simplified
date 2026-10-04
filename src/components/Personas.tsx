@@ -5,7 +5,13 @@ import type { Dict, Locale } from "@/lib/i18n";
 import { CORP_KN } from "@/lib/i18n";
 import { BY_ID, CORP_HEX, SHAPES, corpKey } from "@/lib/wards";
 
-export default function Personas({ t, lang }: { t: Dict["people"]; lang: Locale }) {
+export default function Personas({
+  t,
+  lang,
+}: {
+  t: Dict["people"];
+  lang: Locale;
+}) {
   const [active, setActive] = useState(t.list[0].id);
   const p = t.list.find((x) => x.id === active)!;
   const ward = BY_ID.get(p.ward)!;
@@ -31,7 +37,9 @@ export default function Personas({ t, lang }: { t: Dict["people"]; lang: Locale 
             >
               <span className="station-dot" />
               <span className="station-name">{x.name}</span>
-              <span className="station-place">{lang === "kn" ? w.ward_name_kn : w.ward_name}</span>
+              <span className="station-place">
+                {lang === "kn" ? w.ward_name_kn : w.ward_name}
+              </span>
             </button>
           );
         })}
@@ -39,7 +47,10 @@ export default function Personas({ t, lang }: { t: Dict["people"]; lang: Locale 
 
       <div id="persona-panel" role="tabpanel" className="people-panel">
         <div className="people-where">
-          <svg viewBox={`0 0 ${SHAPES.width} ${SHAPES.height}`} aria-hidden="true">
+          <svg
+            viewBox={`0 0 ${SHAPES.width} ${SHAPES.height}`}
+            aria-hidden="true"
+          >
             {SHAPES.shapes.map((s) => {
               const w = BY_ID.get(s.ward_id);
               if (!w) return null;
@@ -58,26 +69,34 @@ export default function Personas({ t, lang }: { t: Dict["people"]; lang: Locale 
             })}
           </svg>
           <p className="people-who">{p.who}</p>
-          <p className="people-corp">{lang === "kn" ? CORP_KN[ward.corporation] : ward.corporation}</p>
+          <p className="people-corp">
+            {lang === "kn" ? CORP_KN[ward.corporation] : ward.corporation}
+          </p>
         </div>
 
-        <div className="people-cols">
-          <section>
-            <h3>{t.act}</h3>
-            <p>{p.act}</p>
-          </section>
-          <section className="people-ground">
-            <h3>{t.ground}</h3>
-            <p>{p.ground}</p>
-          </section>
-          <section>
-            <h3>{t.todo}</h3>
-            <ul>
-              {p.todo.map((x) => (
-                <li key={x}>{x}</li>
-              ))}
-            </ul>
-          </section>
+        <div className="people-right">
+          <p className="people-stat">
+            <span className="people-stat-n">{p.stat.value}</span>
+            <span className="people-stat-l">{p.stat.label}</span>
+          </p>
+          <div className="people-cols">
+            <section>
+              <h3>{t.act}</h3>
+              <p>{p.act}</p>
+            </section>
+            <section className="people-ground">
+              <h3>{t.ground}</h3>
+              <p>{p.ground}</p>
+            </section>
+            <section>
+              <h3>{t.todo}</h3>
+              <ul>
+                {p.todo.map((x) => (
+                  <li key={x}>{x}</li>
+                ))}
+              </ul>
+            </section>
+          </div>
         </div>
       </div>
       <p className="fine people-note">{t.note}</p>

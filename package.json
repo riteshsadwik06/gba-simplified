@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/export-transition.mjs && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "export:data": "node scripts/export-transition.mjs"
   },
   "dependencies": {
     "@fontsource-variable/anek-kannada": "^5.3.0",

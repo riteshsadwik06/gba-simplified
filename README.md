@@ -8,7 +8,8 @@ Bilingual (English / ಕನ್ನಡ) Next.js + Tailwind site, statically genera
 ## Sections
 - **Hero**: a Three.js model of the 369 wards that rises and splits from one BBMP slab into five corporations (drag to rotate, tap a ward to look it up)
 - **The line so far**: timeline drawn as a metro line, with the pending elections as the under-construction stretch
-- **What it means for you**: five composite personas, one per corporation: what the Act says, what's happening on the ground, what they can do
+- **What has moved**: the transition tracker, filterable by status and area, with sources per row
+- **On your street**: five composite personas, one per corporation: what the Act says, what's happening on the ground, what they can do
 - **What changed**: BBMP Act 2020 vs GBG Act 2024, through participation, autonomy and accountability
 - **Find your ward**: search or tap any ward to see corporation, zone and assembly constituency
 - **Who to ask**: pick an everyday problem, see which body owns it
@@ -36,5 +37,6 @@ npm run dev   # http://localhost:3000 -> redirects to /en
 - [ ] Confirm current corporation election status
 
 ## Data
+- **Transition tracker**: `src/data/transition.json` (23 items: area, status, summary in EN/KN, detail, date, sources). `npm run export:data` (also run on build) writes downloadable copies to `public/data/gba-transition.csv` and `.json`. Status values: moved, underway, legacy (still on BBMP systems or unchanged), stuck, not_yet.
 - Ward list and boundaries (369 GBA wards, 5 corporations)
 - Policy comparison: PRS Legislative Research brief on the GBG Bill, 2024

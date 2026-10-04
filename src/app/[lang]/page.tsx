@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import CityScape from "@/components/CityScape";
 import Personas from "@/components/Personas";
+import Tracker from "@/components/Tracker";
 import WardFinder from "@/components/WardFinder";
 import WhoToAsk from "@/components/WhoToAsk";
 import { CORPS, getDictionary, hasLocale, SOURCES, SURVEY_URL } from "@/lib/i18n";
@@ -55,7 +56,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
               <a href="#ward" className="btn">
                 {t.hero.ctaWard}
               </a>
-              <a href={SURVEY_URL} target="_blank" rel="noopener" className="btn btn-quiet">
+              <a href="#tracker" className="btn btn-quiet">
                 {t.hero.ctaSurvey}
               </a>
             </div>
@@ -96,6 +97,14 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
               </li>
             ))}
           </ol>
+        </section>
+
+        <section id="tracker" className="sec sec-alt" aria-labelledby="tracker-h">
+          <div className="sec-head">
+            <h2 id="tracker-h">{t.tracker.title}</h2>
+            <p>{t.tracker.lede}</p>
+          </div>
+          <Tracker t={t.tracker} lang={lang} />
         </section>
 
         <section id="people" className="sec" aria-labelledby="people-h">
