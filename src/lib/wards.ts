@@ -17,16 +17,26 @@ export const SHAPES = shapes as { width: number; height: number; shapes: { ward_
 export type CorpKey = "Central" | "North" | "East" | "South" | "West";
 export const corpKey = (full: string) => full.replace("Bengaluru ", "").replace(" City Corporation", "") as CorpKey;
 
-// Namma Metro line colours, one per corporation. Keep in sync with globals.css.
+// Namma Metro line colours, one per corporation, stepped to pass the
+// colour-vision and contrast checks on the granite ground (light) and indigo (dark).
+// DOM marks use the CSS variables so dark mode switches; Three.js needs hex.
 export const CORP_HEX: Record<CorpKey, string> = {
-  Central: "#e2559a", // Pink line
-  North: "#1f74c4", // Blue line
-  East: "#7b3294", // Purple line
-  South: "#e9b10c", // Yellow line
-  West: "#16924a", // Green line
+  Central: "var(--c-central)", // Pink line
+  North: "var(--c-north)", // Blue line
+  South: "var(--c-south)", // Yellow line
+  East: "var(--c-east)", // Purple line
+  West: "var(--c-west)", // Green line
+};
+export const CORP_HEX_3D: Record<CorpKey, string> = {
+  Central: "#d0427f",
+  North: "#1f6fbf",
+  South: "#b98600",
+  East: "#7b3294",
+  West: "#15884a",
 };
 
-export const CORP_ORDER: CorpKey[] = ["Central", "North", "East", "South", "West"];
+// Fixed order everywhere (validated as adjacent pairs).
+export const CORP_ORDER: CorpKey[] = ["Central", "North", "South", "East", "West"];
 
 export const WARD_COUNT: Record<CorpKey, number> = WARDS.reduce(
   (acc, w) => {

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import { BY_ID, CORP_HEX, CORP_ORDER, SHAPES, SELECT_EVENT, corpKey, parseRings, type CorpKey } from "@/lib/wards";
+import { BY_ID, CORP_HEX_3D, CORP_ORDER, SHAPES, SELECT_EVENT, corpKey, parseRings, type CorpKey } from "@/lib/wards";
 
 type Props = { lang: "en" | "kn"; hint: string; replayLabel: string };
 
@@ -87,7 +87,7 @@ export default function CityScape({ lang, hint, replayLabel }: Props) {
       );
       mesh.add(edges);
       city.add(mesh);
-      items.push({ id: s.ward_id, corp, mesh, target: new THREE.Color(CORP_HEX[corp]) });
+      items.push({ id: s.ward_id, corp, mesh, target: new THREE.Color(CORP_HEX_3D[corp]) });
     }
 
     const offsets: Record<string, THREE.Vector2> = {};

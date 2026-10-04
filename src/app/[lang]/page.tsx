@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import CityScape from "@/components/CityScape";
 import Personas from "@/components/Personas";
 import Tracker from "@/components/Tracker";
+import Numbers from "@/components/Numbers";
 import WardFinder from "@/components/WardFinder";
 import WhoToAsk from "@/components/WhoToAsk";
 import { CORPS, getDictionary, hasLocale, SOURCES, SURVEY_URL } from "@/lib/i18n";
@@ -107,7 +108,15 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <Tracker t={t.tracker} lang={lang} />
         </section>
 
-        <section id="people" className="sec" aria-labelledby="people-h">
+        <section id="numbers" className="sec" aria-labelledby="numbers-h">
+          <div className="sec-head">
+            <h2 id="numbers-h">{t.numbers.title}</h2>
+            <p>{t.numbers.lede}</p>
+          </div>
+          <Numbers t={t.numbers} lang={lang} />
+        </section>
+
+        <section id="people" className="sec sec-alt" aria-labelledby="people-h">
           <div className="sec-head">
             <h2 id="people-h">{t.people.title}</h2>
             <p>{t.people.lede}</p>
@@ -115,7 +124,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <Personas t={t.people} lang={lang} />
         </section>
 
-        <section id="changed" className="sec sec-alt" aria-labelledby="changed-h">
+        <section id="changed" className="sec" aria-labelledby="changed-h">
           <div className="sec-head">
             <h2 id="changed-h">{t.changed.title}</h2>
             <p>{t.changed.lede}</p>
@@ -164,7 +173,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           </div>
         </section>
 
-        <section id="ward" className="sec" aria-labelledby="ward-h">
+        <section id="ward" className="sec sec-alt" aria-labelledby="ward-h">
           <div className="sec-head">
             <h2 id="ward-h">{t.ward.title}</h2>
             <p>{t.ward.lede}</p>
@@ -172,7 +181,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <WardFinder t={t.ward} lang={lang} />
         </section>
 
-        <section id="who" className="sec sec-alt" aria-labelledby="who-h">
+        <section id="who" className="sec" aria-labelledby="who-h">
           <div className="sec-head">
             <h2 id="who-h">{t.who.title}</h2>
             <p>{t.who.lede}</p>

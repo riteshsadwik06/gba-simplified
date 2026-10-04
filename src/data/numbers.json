@@ -1,0 +1,64 @@
+{
+  "corporations": {
+    "order": ["Central", "North", "South", "East", "West"],
+    "wards": { "Central": 63, "North": 72, "South": 72, "East": 50, "West": 112 },
+    "area_sqkm": { "Central": 78, "North": 158, "South": 147, "East": 168, "West": 161 },
+    "voters_lakh": { "Central": 14.26, "North": 19.54, "South": 17.45, "East": 10.41, "West": 27.27 },
+    "budget_cr": { "Central": 3427, "North": 4341, "South": 3826, "East": 3890, "West": 4732 },
+    "notes": "Registered voters are from the roll before the 2026 revision. Budgets are 2026-27 estimates.",
+    "sources": [
+      { "title": "Wikipedia: 2026 Greater Bengaluru Authority elections (wards, voters)", "url": "https://en.wikipedia.org/wiki/2026_Greater_Bengaluru_Authority_elections" },
+      { "title": "Wikipedia: Greater Bengaluru Authority (area)", "url": "https://en.wikipedia.org/wiki/Greater_Bengaluru_Authority" },
+      { "title": "OpenCity: Analysis of GBA budgets 2026-27", "url": "https://opencity.in/analysis-gba-budgets-2026-27/" },
+      { "title": "ThePrint: South corporation's Rs 3,825.95 crore budget", "url": "https://theprint.in/india/bengaluru-south-corporation-presents-rs-3825-95-crore-maiden-budget/2891149/" },
+      { "title": "News First: Central corporation's Rs 3,426.61 crore budget", "url": "https://newsfirstprime.com/bengaluru/bengaluru-central-civic-body-unveils-342661-crore-budget-estimate-for-2026-27-11364328" },
+      { "title": "News Karnataka: East corporation's Rs 3,890 crore budget", "url": "https://newskarnataka.com/bengaluru/bengaluru-east-civic-body-presents-%e2%82%b93890-crore-budget/27032026/" }
+    ]
+  },
+  "spend_split": {
+    "items": [
+      { "key": "works", "pct": 60 },
+      { "key": "waste", "pct": 11.4 },
+      { "key": "other", "pct": 27.6 },
+      { "key": "education", "pct": 0.5 },
+      { "key": "council", "pct": 0.5 }
+    ],
+    "note": "Approximate shares of the combined 2026-27 budgets. Education and the council each get under 1 percent; shown at 0.5 percent.",
+    "sources": [{ "title": "OpenCity: Analysis of GBA budgets 2026-27", "url": "https://opencity.in/analysis-gba-budgets-2026-27/" }]
+  },
+  "west_gap": {
+    "items": [
+      { "key": "far", "expected": 380, "earned": 0 },
+      { "key": "khata", "expected": 563, "earned": 0 }
+    ],
+    "sources": [{ "title": "Deccan Herald: Cash-strapped West corporation", "url": "https://www.deccanherald.com/amp/story/india/karnataka/bengaluru/nil-revenue-from-khata-switch-far-pushes-cash-strapped-bengaluru-west-corporation-to-the-brink-4099611" }]
+  },
+  "staff": {
+    "items": [
+      { "key": "actual", "value": 18790 },
+      { "key": "sanctioned", "value": 22411 },
+      { "key": "needed", "value": 23689 }
+    ],
+    "sources": [{ "title": "Deccan Herald: GBA system needs more staff (Sep 2025)", "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fwage-bill-rs-137-cr-a-year-gba-system-needs-1-200-more-staff-3705903" }]
+  },
+  "voter_roll": {
+    "before_lakh": 103,
+    "draft_lakh": 56.99,
+    "flagged_lakh": 46.88,
+    "districts": [
+      { "name": "BBMP (South)", "pct": 49.33 },
+      { "name": "BBMP (Central)", "pct": 45.54 },
+      { "name": "BBMP (North)", "pct": 45.12 },
+      { "name": "Bangalore Urban", "pct": 42.71 }
+    ],
+    "sources": [
+      { "title": "Deccan Herald: 46.88 lakh names flagged for deletion", "url": "https://www.deccanherald.com/india/karnataka/bengaluru/is-your-name-on-the-bengaluru-voter-list-4688-lakh-names-flagged-for-deletion-4122667" },
+      { "title": "ThePrint: Why urban centres see high deletions during SIR", "url": "https://theprint.in/india/governance/bengaluru-to-lucknow-why-urban-centres-are-seeing-high-electoral-roll-deletions-during-sir/3026124/" }
+    ]
+  },
+  "ekhata": {
+    "issued_lakh": 8.2,
+    "total_lakh": 21,
+    "sources": [{ "title": "The Realty Today: Over 8 lakh e-khatas issued", "url": "https://therealtytoday.com/news/regulatory/over-8-lakh-e-khatas-issued-gba-to-open-passport-style-centres-for-faster-processing/" }]
+  }
+}
