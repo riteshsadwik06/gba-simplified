@@ -1,244 +1,218 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import CityScape from "@/components/CityScape";
+import Personas from "@/components/Personas";
 import WardFinder from "@/components/WardFinder";
-import { getDictionary, hasLocale, SOURCES, SURVEY_URL } from "@/lib/i18n";
+import WhoToAsk from "@/components/WhoToAsk";
+import { CORPS, getDictionary, hasLocale, SOURCES, SURVEY_URL } from "@/lib/i18n";
+import { CORP_HEX, CORP_ORDER, WARD_COUNT } from "@/lib/wards";
+
+function Mark() {
+  return (
+    <span className="mark" aria-hidden="true">
+      {CORP_ORDER.map((k) => (
+        <i key={k} style={{ background: CORP_HEX[k] }} />
+      ))}
+    </span>
+  );
+}
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
   const t = getDictionary(lang);
   const other = lang === "en" ? "kn" : "en";
-
-  const nav = [
-    ["changed", t.nav.changed],
-    ["ward", t.nav.ward],
-    ["who", t.nav.who],
-    ["voice", t.nav.voice],
-    ["survey", t.nav.survey],
-    ["about", t.nav.about],
-  ] as const;
+  const stops = t.timeline.stops;
 
   return (
     <>
-      <header className="sticky top-0 z-30 border-b border-line bg-paper/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-          <Link href={`/${lang}`} className="font-display text-xl font-bold">
-            {t.nav.brand}
-          </Link>
-          <nav className="hidden gap-5 text-sm md:flex">
-            {nav.map(([id, label]) => (
-              <a key={id} href={`#${id}`} className="text-muted hover:text-ink">
-                {label}
-              </a>
-            ))}
-          </nav>
-          <Link
-            href={`/${other}`}
-            className="rounded-full border border-line px-3 py-1 text-sm hover:border-ink"
-            hrefLang={other}
-          >
-            {t.nav.switchLang}
-          </Link>
-        </div>
+      <a href="#main" className="skip">
+        Skip to content
+      </a>
+      <header className="top">
+        <Link href={`/${lang}`} className="brand">
+          <Mark />
+          {t.nav.brand}
+        </Link>
+        <nav aria-label="Sections">
+          {t.nav.links.map(([id, label]) => (
+            <a key={id} href={`#${id}`}>
+              {label}
+            </a>
+          ))}
+        </nav>
+        <Link href={`/${other}`} hrefLang={other} className="lang">
+          {t.nav.switchLang}
+        </Link>
       </header>
 
-      <main>
-        {/* Hero */}
-        <section className="mx-auto max-w-6xl px-4 pb-16 pt-14 sm:px-6 sm:pt-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">{t.hero.kicker}</p>
-          <h1 className="mt-4 max-w-4xl font-display text-4xl font-bold leading-[1.1] sm:text-6xl">{t.hero.title}</h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted sm:text-xl">{t.hero.lede}</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#ward" className="rounded-full bg-ink px-6 py-3 font-semibold text-paper hover:opacity-90">
-              {t.hero.ctaWard}
-            </a>
-            <a
-              href={SURVEY_URL}
-              target="_blank"
-              rel="noopener"
-              className="rounded-full border border-ink px-6 py-3 font-semibold hover:bg-card"
-            >
-              {t.hero.ctaSurvey}
-            </a>
+      <main id="main">
+        <section className="hero">
+          <div className="hero-text">
+            <h1>{t.hero.title}</h1>
+            <p className="hero-lede">{t.hero.lede}</p>
+            <div className="hero-actions">
+              <a href="#ward" className="btn">
+                {t.hero.ctaWard}
+              </a>
+              <a href={SURVEY_URL} target="_blank" rel="noopener" className="btn btn-quiet">
+                {t.hero.ctaSurvey}
+              </a>
+            </div>
+            <figure className="inscription">
+              <blockquote lang="kn">{t.hero.inscription}</blockquote>
+              <figcaption>{t.hero.inscriptionGloss}</figcaption>
+            </figure>
           </div>
-          <dl className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line lg:grid-cols-4">
-            {t.facts.map((f) => (
-              <div key={f.label} className="bg-card p-5 sm:p-6">
-                <dt className="font-display text-4xl font-bold sm:text-5xl">{f.value}</dt>
-                <dd className="mt-2 text-sm text-muted">{f.label}</dd>
-              </div>
-            ))}
-          </dl>
-        </section>
-
-        {/* Timeline */}
-        <section className="border-y border-line bg-card">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-            <h2 className="font-display text-3xl font-bold">{t.timeline.title}</h2>
-            <ol className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {t.timeline.items.map((i) => (
-                <li key={i.date} className="border-l-2 border-accent pl-4">
-                  <p className="font-semibold">{i.date}</p>
-                  <p className="mt-1 text-muted">{i.text}</p>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </section>
-
-        {/* What changed */}
-        <section id="changed" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <h2 className="font-display text-3xl font-bold sm:text-4xl">{t.changed.title}</h2>
-          <p className="mt-4 max-w-3xl text-lg text-muted">{t.changed.lede}</p>
-          <div className="mt-8 overflow-x-auto rounded-2xl border border-line bg-card">
-            <table className="w-full min-w-[640px] text-left">
-              <thead>
-                <tr className="border-b border-line text-sm text-muted">
-                  {t.changed.headers.map((h, i) => (
-                    <th key={i} className="px-5 py-4 font-semibold">
-                      {h}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {t.changed.rows.map((r) => (
-                  <tr key={r[0]} className="border-b border-line last:border-0 align-top">
-                    <th className="w-44 px-5 py-4 font-semibold">{r[0]}</th>
-                    <td className="px-5 py-4 text-muted">{r[1]}</td>
-                    <td className="px-5 py-4">{r[2]}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="mt-3 text-sm text-muted">{t.changed.source}</p>
-
-          <h3 className="mt-14 font-display text-2xl font-bold">{t.changed.lensesTitle}</h3>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            {t.changed.lenses.map((l) => (
-              <div key={l.name} className="rounded-2xl border border-line bg-card p-6">
-                <p className="font-display text-xl font-bold text-accent">{l.name}</p>
-                <p className="mt-2 text-muted">{l.text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Ward finder */}
-        <section id="ward" className="border-y border-line bg-paper">
-          <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">{t.ward.title}</h2>
-            <p className="mt-4 mb-8 max-w-3xl text-lg text-muted">{t.ward.lede}</p>
-            <WardFinder t={t.ward} lang={lang} />
-          </div>
-        </section>
-
-        {/* Who does what */}
-        <section id="who" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <h2 className="font-display text-3xl font-bold sm:text-4xl">{t.who.title}</h2>
-          <p className="mt-4 max-w-3xl text-lg text-muted">{t.who.lede}</p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {t.who.items.map((a) => (
-              <div key={a.name} className="rounded-2xl border border-line bg-card p-5">
-                <p className="font-semibold">{a.name}</p>
-                <p className="mt-2 text-sm text-muted">{a.text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Your voice */}
-        <section id="voice" className="border-y border-line bg-card">
-          <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.4fr_1fr]">
-            <div>
-              <h2 className="font-display text-3xl font-bold sm:text-4xl">{t.voice.title}</h2>
-              <ol className="mt-8 space-y-6">
-                {t.voice.items.map((v, i) => (
-                  <li key={v.title} className="flex gap-4">
-                    <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-accent font-bold text-paper">
-                      {i + 1}
+          <div className="hero-city">
+            <CityScape lang={lang} hint={t.hero.mapHint} replayLabel={t.hero.replay} />
+            <ul className="hero-legend">
+              {CORP_ORDER.map((k) => {
+                const c = CORPS.find((x) => x.key === k)!;
+                return (
+                  <li key={k} style={{ ["--c" as string]: CORP_HEX[k] }}>
+                    <span className="legend-name">{lang === "kn" ? c.kn : k}</span>
+                    <span className="legend-count">
+                      {WARD_COUNT[k]} {t.hero.wards}
                     </span>
-                    <div>
-                      <p className="font-semibold">{v.title}</p>
-                      <p className="mt-1 text-muted">{v.text}</p>
-                    </div>
                   </li>
-                ))}
-              </ol>
-            </div>
-            <div className="rounded-2xl border border-line bg-paper p-6">
-              <h3 className="font-display text-xl font-bold">{t.voice.concernsTitle}</h3>
-              <ul className="mt-4 space-y-3 text-muted">
-                {t.voice.concerns.map((c) => (
-                  <li key={c} className="border-l-2 border-line pl-3">
-                    {c}
-                  </li>
-                ))}
-              </ul>
-            </div>
+                );
+              })}
+            </ul>
           </div>
         </section>
 
-        {/* Survey */}
-        <section id="survey" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <h2 className="font-display text-3xl font-bold sm:text-4xl">{t.survey.title}</h2>
-          <p className="mt-4 max-w-3xl text-lg text-muted">{t.survey.lede}</p>
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            {[0, 1, 2].map((i) => (
-              <div
-                key={i}
-                className="flex h-40 items-center justify-center rounded-2xl border border-dashed border-line text-muted"
-              >
-                {t.survey.pending}
+        <section className="sec line-sec" aria-labelledby="line-h">
+          <div className="sec-head">
+            <h2 id="line-h">{t.timeline.title}</h2>
+            <p>{t.timeline.lede}</p>
+          </div>
+          <ol className="metro">
+            {stops.map((s, i) => (
+              <li key={s.date} className={i === stops.length - 1 ? "stop pending" : "stop"}>
+                <span className="stop-dot" />
+                <span className="stop-date">{s.date}</span>
+                <span className="stop-text">{s.text}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section id="people" className="sec" aria-labelledby="people-h">
+          <div className="sec-head">
+            <h2 id="people-h">{t.people.title}</h2>
+            <p>{t.people.lede}</p>
+          </div>
+          <Personas t={t.people} lang={lang} />
+        </section>
+
+        <section id="changed" className="sec sec-alt" aria-labelledby="changed-h">
+          <div className="sec-head">
+            <h2 id="changed-h">{t.changed.title}</h2>
+            <p>{t.changed.lede}</p>
+          </div>
+          <div className="ledger" role="table">
+            <div className="ledger-row ledger-headrow" role="row">
+              <span role="columnheader" />
+              <span role="columnheader">{t.changed.before}</span>
+              <span role="columnheader">{t.changed.after}</span>
+            </div>
+            {t.changed.rows.map(([topic, before, after]) => (
+              <div className="ledger-row" role="row" key={topic}>
+                <span role="rowheader" className="ledger-topic">
+                  {topic}
+                </span>
+                <span role="cell" className="ledger-before">
+                  {before}
+                </span>
+                <span role="cell" className="ledger-after">
+                  {after}
+                </span>
               </div>
             ))}
           </div>
-          <div className="mt-8">
-            <a
-              href={SURVEY_URL}
-              target="_blank"
-              rel="noopener"
-              className="inline-block rounded-full bg-accent px-6 py-3 font-semibold text-paper hover:opacity-90"
-            >
-              {t.survey.cta}
-            </a>
-            <p className="mt-3 text-sm text-muted">{t.survey.note}</p>
-          </div>
-        </section>
+          <p className="fine">{t.changed.source}</p>
 
-        {/* About */}
-        <section id="about" className="border-t border-line bg-card">
-          <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">{t.about.title}</h2>
-            <p className="mt-4 max-w-3xl text-lg text-muted">{t.about.text}</p>
-            <div className="mt-8 grid gap-4 md:grid-cols-3">
-              {t.about.workstreams.map((w) => (
-                <div key={w.name} className="rounded-2xl border border-line bg-paper p-5">
-                  <p className="font-semibold">{w.name}</p>
-                  <p className="mt-1 text-sm text-muted">{w.text}</p>
+          <div className="lenses">
+            <p className="lenses-title">{t.changed.lensesTitle}</p>
+            <dl>
+              {t.changed.lenses.map((l) => (
+                <div key={l.name}>
+                  <dt>{l.name}</dt>
+                  <dd>{l.text}</dd>
                 </div>
               ))}
-            </div>
-            <p className="mt-8 text-sm text-muted">{t.about.disclaimer}</p>
+            </dl>
+          </div>
+
+          <div className="concerns">
+            <h3>{t.changed.concernsTitle}</h3>
+            <ul>
+              {t.changed.concerns.map((c) => (
+                <li key={c}>{c}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <section id="ward" className="sec" aria-labelledby="ward-h">
+          <div className="sec-head">
+            <h2 id="ward-h">{t.ward.title}</h2>
+            <p>{t.ward.lede}</p>
+          </div>
+          <WardFinder t={t.ward} lang={lang} />
+        </section>
+
+        <section id="who" className="sec sec-alt" aria-labelledby="who-h">
+          <div className="sec-head">
+            <h2 id="who-h">{t.who.title}</h2>
+            <p>{t.who.lede}</p>
+          </div>
+          <WhoToAsk t={t.who} />
+        </section>
+
+        <section id="survey" className="sec survey" aria-labelledby="survey-h">
+          <div className="sec-head">
+            <h2 id="survey-h">{t.survey.title}</h2>
+            <p>{t.survey.lede}</p>
+          </div>
+          <div>
+            <a href={SURVEY_URL} target="_blank" rel="noopener" className="btn">
+              {t.survey.cta}
+            </a>
+            <p className="fine">{t.survey.note}</p>
+          </div>
+        </section>
+
+        <section id="about" className="sec about" aria-labelledby="about-h">
+          <div className="sec-head">
+            <h2 id="about-h">{t.about.title}</h2>
+            <p>{t.about.text}</p>
+            <p className="fine">{t.about.disclaimer}</p>
           </div>
         </section>
       </main>
 
-      <footer className="border-t border-line">
-        <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-muted sm:px-6">
-          <p className="font-semibold text-ink">{t.footer.sources}</p>
-          <ul className="mt-2 space-y-1">
+      <footer className="foot">
+        <div>
+          <p className="foot-brand">
+            <Mark /> {t.nav.brand}
+          </p>
+          <p>{t.footer.built}</p>
+          <p>{t.footer.data}</p>
+          <p>{t.footer.colours}</p>
+        </div>
+        <div>
+          <h2>{t.footer.sources}</h2>
+          <ul>
             {SOURCES.map((s) => (
               <li key={s.url}>
-                <a href={s.url} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-ink">
+                <a href={s.url} target="_blank" rel="noopener">
                   {s.title}
                 </a>
               </li>
             ))}
           </ul>
-          <p className="mt-4">{t.footer.data}</p>
-          <p className="mt-1">{t.footer.built}</p>
         </div>
       </footer>
     </>

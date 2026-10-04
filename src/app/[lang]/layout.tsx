@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import "@fontsource-variable/fraunces";
-import "@fontsource-variable/inter";
-import "@fontsource-variable/noto-sans-kannada";
+import "@fontsource-variable/anek-kannada/standard.css";
 import { getDictionary, hasLocale, locales } from "@/lib/i18n";
 import "./globals.css";
 
@@ -27,7 +25,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
   if (!hasLocale(lang)) notFound();
   return (
     <html lang={lang} className="antialiased">
-      <body className="min-h-screen font-sans">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
